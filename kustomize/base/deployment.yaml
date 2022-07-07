@@ -15,7 +15,7 @@ spec:
         app: hello-gitops
     spec:
       containers:
-        - image: jerrycan321/hello-gitops:v0.0.1
+        - image: jerrycan321/hello-gitops
           name: hello-gitops
           ports:
             - name: http
