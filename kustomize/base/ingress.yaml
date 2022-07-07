@@ -10,7 +10,8 @@ spec:
       port:
         number: 80
   rules:
-    - http:
+    - host: hello-gitops.info
+      http:
         paths:
           - path: /
             pathType: Prefix
