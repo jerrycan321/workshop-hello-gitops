@@ -12,5 +12,5 @@ spec:
             backend:
               service:
                 name: hello-gitops
-                Port:
+                port:
                   number: 80
