@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  namespace: argocd
+  name: hello-gitops
+spec:
+  project: default
+  destination:
+    namespace: hello-gitops
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: kustomize/base
+    repoURL: https://github.com/jerrycan321/workshop-hello-gitops.git
+    targetRevision: HEAD
