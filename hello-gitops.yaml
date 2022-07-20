@@ -12,3 +12,9 @@ spec:
     path: kustomize/base
     repoURL: https://github.com/jerrycan321/workshop-hello-gitops.git
     targetRevision: HEAD
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
