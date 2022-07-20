@@ -8,4 +8,4 @@ namespace: hello-gitops
 images:
 - name: hello-gitops
   newName: jerrycan321/hello-gitops
-  newTag: da3694fc9fa1a34c8e88df57323abdf10d0f4af7
+  newTag: 18e5c2b5ffc5d375c3759cae81eb04f29852bf53
