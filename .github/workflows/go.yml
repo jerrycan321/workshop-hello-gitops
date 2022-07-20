@@ -54,9 +54,10 @@ jobs:
         
     - name: Commit files
       run: |
+        DATE=$(date -R)
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git commit -am "Bump docker tag"
+        git commit -am "Bump docker tag - ${DATE}"
 
     - name: Push changes
       uses: ad-m/github-push-action@master
